@@ -8,8 +8,8 @@
     Red: hsl(0, 100%, 66%);
     
     White: hsl(0, 0%, 100%);
-    Light_grayish_violet: hsl(270, 3%, 87%);
-    Dark_grayish_violet: hsl(279, 6%, 55%);
+    Light_grayish_violet: #dedddf;
+    Dark_grayish_violet: #8e8593;
     Very_dark_violet: hsl(278, 68%, 11%);
 }
 
@@ -32,14 +32,14 @@ main{
 }
 
 .cartao-back{
-    position: absolute;
-    top: 100px;
+    position: relative;
+    top: 50px;
     left: 250px;
 }
 
 .cartao-front{
     position: relative;
-    bottom: 200px;
+    bottom: 5px;
     left: 170px;
 }
 
@@ -65,8 +65,27 @@ main{
 }
 
 .numeroCartao{
-    color: #fff;
+    color: #dedddf;
     position: absolute;
-    top: 180px;
-    left: 50px;
+    top: 150px;
+    left: 40px;
+}
+
+.iconCard{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.nameCard{
+    color: #dedddf;
+    position: absolute;
+    top: 200px;
+    left: 40px;
+}
+
+.cvvCard{
+    color: #8e8593;
+    position: absolute;
+    top: 107px;
+    left: 355px;
 }
