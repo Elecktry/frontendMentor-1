@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
 *{
+    font-size: 18px;
     margin: 0;
     padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 :root{
     Linear_gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
     Red: hsl(0, 100%, 66%);
-    
     White: hsl(0, 0%, 100%);
     Light_grayish_violet: #dedddf;
     Dark_grayish_violet: #8e8593;
-    Very_dark_violet: hsl(278, 68%, 11%);
+    Very_dark_violet: #21092f;
 }
 
 main{
@@ -33,13 +36,13 @@ main{
 
 .cartao-back{
     position: relative;
-    top: 50px;
+    top: 2px;
     left: 250px;
 }
 
 .cartao-front{
     position: relative;
-    bottom: 5px;
+    bottom: 40px;
     left: 170px;
 }
 
@@ -49,23 +52,105 @@ main{
     flex-direction: column;
     gap: 20px;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+}
+
+.form-floating input{
+    margin: 5px;
+    padding: 10px;
+    height: 30px;
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #dedddf;
+    border-radius: 7px;
+}
+
+.form-floating label{
+    color: #21092f;
+}
+
+.form-floating input:focus{
+    outline: 1px solid #8e8593;
+}
+
+
+.form-floating-sm input{
+    margin-top: 25px;
+    height: 30px;
+    width: 70px;
+    padding: 10px;
+    border: 1px solid #dedddf;
+    border-radius: 7px;
+}
+.form-floating-sm input:focus{
+    outline : 1px solid #8e8593;
+}
+
+.form-floating-sm label{
+    color: #21092f;
+}
+
+.form-floating-cvv input{
+    margin-top: 25px;
+    height: 30px;
+    width: 270px;
+    padding: 10px;
+    border: 1px solid #dedddf;
+    border-radius: 7px;
+}
+.form-floating-cvv label{
+    color: #21092f ;
+}
+
+
+#label-name{
+    position: absolute;
+    bottom: 145px;
+    left: 5px;
+}
+
+#label-card{
+    position: absolute;
+    bottom: 59px;
+    left: 5px
+}
+
+#label-mes{
+    position: absolute;
+    bottom: 60px;
+    left: 5px;
+}
+
+#label-cvv{
+    position: absolute;
+    left: 230px;
+}
+
+.btn{
+    color: #dedddf;
+    background-color:#21092f ;
+    border-radius: 7px;
+    height: 50px;
+    width: 525px;
 }
 
 .forms{
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 450px;
 }
 .datas{
-    width: 450px;
+    position: relative;
+    width: 435px;
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
 .numeroCartao{
+    height: 100px;
     color: #dedddf;
     position: absolute;
     top: 150px;
@@ -95,9 +180,8 @@ main{
 
 
 .cvvCard{
-    color: #8e8593;
+    color: #dedddf;
     position: absolute;
     top: 107px;
     left: 355px;
 }
-

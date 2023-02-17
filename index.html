@@ -10,11 +10,6 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
   <script src="https://unpkg.com/imask"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <title>Frontend Mentor | Interactive card details form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -30,7 +25,7 @@
   </style>
 </head>
 
-<body>
+<body onload="getElementsrCard()">
 
   <main>
     <section class="esquerda">
@@ -64,33 +59,32 @@
     <section class="direita">
       <div class="forms">
         <div class="form-floating">
-          <input type="email" class="form-control name" id="floatingName" placeholder="name@example.com">
-          <label for="floatingInput">Name Completed</label>
+          <input type="email" class="form-control name" id="floatingName" placeholder="e.g Jane Appleseed">
+          <label id="label-name" for="floatingInput">CARDHOLDER NAME</label>
         </div>
         <div class="form-floating">
-          <input type="text" class="form-control cartao" id="floatingcartao" placeholder="cartao">
-          <label for="floatingcartao">cartão</label>
+          <input type="text" class="form-control cartao" id="floatingcartao" placeholder="e.g 1234 5678 9230 0000">
+          <label id="label-card" for="floatingcartao">CARD NUMBER</label>
         </div>
 
       </div>
       <div class="datas">
 
-        <div class="form-floating ">
-          <input type="text" class="form-control mes" id="floatingMounth" placeholder="Mouth" minlength="0" maxlength="2">
-          <label for="floatingMounth">Mês</label>
+        <div class="form-floating-sm  ">
+          <input type="text" class="form-control mes" id="floatingMounth" placeholder="MM" minlength="0" maxlength="2">
+          <label id="label-mes" for="floatingMounth">EXP.DATE(MM/YY)</label>
         </div>
-        <div class="form-floating ">
-          <input type="text" class="form-control ano" id="floatingYears" placeholder="Years" minlength="0" maxlength="2">
-          <label for="floatingYears">Ano</label>
+        <div class="form-floating-sm ">
+          <input type="text" class="form-control ano" id="floatingYears" placeholder="YY" minlength="0" maxlength="2">
         </div>
 
-        <div class="form-floating cvv">
-          <input class="form-control" id="floatingcvv" placeholder="cvv" minlength="0" maxlength="3">
-          <label for="floatingcvv">cvv</label>
+        <div class="form-floating-cvv cvv">
+          <input class="form-control" id="floatingcvv" placeholder="e.g 123" minlength="0" maxlength="3">
+          <label id="label-cvv" for="floatingcvv">CVV</label>
         </div>
       </div>
       <div class="forms">
-        <input class="btn btn-primary" type="submit" value="Submit">
+        <input class="btn" type="submit" value="Confirmar">
       </div>
 
 

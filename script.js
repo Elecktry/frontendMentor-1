@@ -1,4 +1,4 @@
-window.onload = function getNumberCard() {
+function getElementsrCard() {
     var formNumber = document.querySelector('.cartao')
 
     var nameCard = document.querySelector('.name')
@@ -14,10 +14,12 @@ window.onload = function getNumberCard() {
 
     };
 
-
-
     var mask = IMask(formNumber, maskOptions)
 
+
+
+
+    
     formNumber.addEventListener("input", () => {
 
         var number = document.getElementById('floatingcartao').value
