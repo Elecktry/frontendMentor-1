@@ -58,7 +58,8 @@ main{
     gap: 20px;
     width: 450px;
 }
-.selects{
+.datas{
+    width: 450px;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -83,9 +84,20 @@ main{
     left: 40px;
 }
 
+.dateCard{
+    display: flex;
+    flex-direction: row;
+    color: #dedddf;
+    position: absolute;
+    top: 40px;
+    left: 360px;
+}
+
+
 .cvvCard{
     color: #8e8593;
     position: absolute;
     top: 107px;
     left: 355px;
 }
+
