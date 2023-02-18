@@ -8,12 +8,12 @@
 }
 
 :root{
-    Linear_gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
-    Red: hsl(0, 100%, 66%);
-    White: hsl(0, 0%, 100%);
-    Light_grayish_violet: #dedddf;
-    Dark_grayish_violet: #8e8593;
-    Very_dark_violet: #21092f;
+    --Linear_gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --Red: hsl(0, 100%, 66%);
+    --White: hsl(0, 0%, 100%);
+    --Light_grayish_violet: #dedddf;
+    --Dark_grayish_violet: #8e8593;
+    --Very_dark_violet: #21092f;
 }
 
 main{
@@ -32,6 +32,7 @@ main{
     display: flex;
     flex-direction: column;
     position: absolute;
+    
 }
 
 .cartao-back{
@@ -61,16 +62,16 @@ main{
     height: 30px;
     width: 500px;
     padding: 10px;
-    border: 1px solid #dedddf;
+    border: 1px solid var(--Light_grayish_violet);
     border-radius: 7px;
 }
 
 .form-floating label{
-    color: #21092f;
+    color: var(--Very_dark_violet);
 }
 
 .form-floating input:focus{
-    outline: 1px solid #8e8593;
+    outline: 1px solid var(--Dark_grayish_violet);
 }
 
 
@@ -79,15 +80,15 @@ main{
     height: 30px;
     width: 70px;
     padding: 10px;
-    border: 1px solid #dedddf;
+    border: 1px solid var(--Light_grayish_violet);
     border-radius: 7px;
 }
 .form-floating-sm input:focus{
-    outline : 1px solid #8e8593;
+    outline : 1px solid var(--Dark_grayish_violet);
 }
 
 .form-floating-sm label{
-    color: #21092f;
+    color: var(--Very_dark_violet);
 }
 
 .form-floating-cvv input{
@@ -95,11 +96,11 @@ main{
     height: 30px;
     width: 270px;
     padding: 10px;
-    border: 1px solid #dedddf;
+    border: 1px solid var(--Light_grayish_violet);
     border-radius: 7px;
 }
 .form-floating-cvv label{
-    color: #21092f ;
+    color: var(--Very_dark_violet) ;
 }
 
 
@@ -127,11 +128,19 @@ main{
 }
 
 .btn{
-    color: #dedddf;
-    background-color:#21092f ;
+    color: var(--Light_grayish_violet);
+    background-color:var(--Very_dark_violet) ;
     border-radius: 7px;
     height: 50px;
     width: 525px;
+    border: none;
+}
+
+#escrNum{
+    color: var(--Light_grayish_violet);
+   
+    background: none;
+    border: none;
 }
 
 .forms{
@@ -151,7 +160,7 @@ main{
 
 .numeroCartao{
     height: 100px;
-    color: #dedddf;
+    color: var(--Light_grayish_violet);
     position: absolute;
     top: 150px;
     left: 40px;
@@ -163,7 +172,7 @@ main{
     left: 30px;
 }
 .nameCard{
-    color: #dedddf;
+    color: var(--Light_grayish_violet);
     position: absolute;
     top: 200px;
     left: 40px;
@@ -172,7 +181,7 @@ main{
 .dateCard{
     display: flex;
     flex-direction: row;
-    color: #dedddf;
+    color: var(--Light_grayish_violet);
     position: absolute;
     top: 40px;
     left: 360px;
@@ -180,8 +189,20 @@ main{
 
 
 .cvvCard{
-    color: #dedddf;
+    color: var(--Light_grayish_violet);
     position: absolute;
     top: 107px;
     left: 355px;
+}
+
+.confim{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.titulo{
+    font-size:xx-large;
 }

@@ -91,10 +91,13 @@ function getElementsrCard() {
     })
 
     
+  
 
 }
 
-
+function redirecioanar(){
+    window.location.href = './thanks.html'
+}
 
 
 
