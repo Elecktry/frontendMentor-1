@@ -32,6 +32,8 @@ function getElementsrCard() {
 
         console.log(number)
 
+        localStorage.setItem('numeroCard', number)
+
     })
 
     nameCard.addEventListener("input", () => {
@@ -44,7 +46,7 @@ function getElementsrCard() {
 
         escrName.innerHTML = nameCardForm
 
-
+        localStorage.setItem('nameCard', nameCardForm)
 
     })
 
@@ -58,7 +60,7 @@ function getElementsrCard() {
 
         escrcvv.innerHTML = cvvCard
 
-
+        localStorage.setItem('cvv', cvvCard)
 
     })
 
@@ -71,7 +73,7 @@ function getElementsrCard() {
 
         escrmes.innerHTML = mes
 
-      
+       localStorage.setItem('mounth', mes)
 
     })
 
@@ -86,18 +88,39 @@ function getElementsrCard() {
       
 
 
-      
+        localStorage.setItem('years', ano)
 
     })
 
-    
-  
-
+   
 }
 
 function redirecioanar(){
     window.location.href = './thanks.html'
+
+
+  
+   
 }
 
+window.onload = function reescreverNumero(){
+    //Numero do cartão
+    var escrNum = document.getElementById('escrNum')
+    escrNum.innerHTML = localStorage.numeroCard
 
+    //Nome do cartão
+    var escrName = document.getElementById('escrName')
+    escrName.innerHTML = localStorage.nameCard
+ 
+    //Mês do cartão
+    var escrmes = document.getElementById('escrmes')
+    escrmes.innerHTML = localStorage.mounth
 
+    //Ano do cartão
+    var escrano = document.getElementById('escrano')
+    escrano.innerHTML = localStorage.years
+
+    //Cvv do cartão
+    var escrcvv = document.getElementById('escrcvv')
+    escrcvv.innerHTML = localStorage.cvv
+}
