@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 
-*{
+* {
     font-size: 18px;
     margin: 0;
     padding: 0;
     font-family: 'Space Grotesk', sans-serif;
 }
 
-:root{
+:root {
     --Linear_gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
     --Red: hsl(0, 100%, 66%);
     --White: hsl(0, 0%, 100%);
@@ -16,38 +16,115 @@
     --Very_dark_violet: #21092f;
 }
 
-main{
+@media screen and (max-width: 480px) {
+    .cartao-front {
+        top: 172px !important;
+        left: 25px !important;
+        z-index: 1;
+    }
+
+
+    .cartao-back {
+        top: -50px !important;
+        left: 90px !important;
+    }
+
+    .bg-main {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column !important;
+        gap: 180px !important;
+    }
+
+    .cardImg {
+        height: 131px;
+    }
+
+    .tituloCard {
+        position: relative;
+        right: 20px;
+        bottom: 95px;
+        font-size: 8pt;
+    }
+
+    .iconCardFront {
+        position: relative;
+        right: 13px;
+        bottom: 11px;
+        width: 55px;
+    }
+
+    #escrNum {
+        font-size: 10pt;
+        position: relative;
+        bottom: 68px;
+    }
+
+    .dateCard {
+        font-size: 8pt !important;
+        position: absolute;
+        top: 25px !important;
+        left: 185px !important;
+    }
+
+    .cvvCard{
+        z-index: 1;
+        position: absolute;
+        top: 58px !important;
+        left: 180px !important;
+    }
+    
+
+    #escrcvv{
+        font-size: 8pt !important;
+    }
+
+    #escrmes {
+        font-size: 8pt !important;
+
+    }
+
+    #escrano {
+        font-size: 8pt !important;
+    }
+
+}
+
+main {
     display: flex;
     flex-direction: row;
     gap: 500px;
 }
 
-.esquerda{
+.esquerda {
     display: flex;
     align-items: center;
     position: relative;
 }
 
-.cartoes{
+.cartoes {
     display: flex;
     flex-direction: column;
     position: absolute;
-    
+
 }
 
-.cartao-back{
+.cartao-back {
     position: relative;
     top: 2px;
     left: 250px;
 }
 
-.cartao-front{
+.cartao-front {
     position: relative;
     bottom: 40px;
     left: 170px;
 }
 
-.direita{
+.direita {
     width: auto;
     display: flex;
     flex-direction: column;
@@ -56,7 +133,7 @@ main{
     align-items: start;
 }
 
-.form-floating input{
+.form-floating input {
     margin: 5px;
     padding: 10px;
     height: 30px;
@@ -66,16 +143,16 @@ main{
     border-radius: 7px;
 }
 
-.form-floating label{
+.form-floating label {
     color: var(--Very_dark_violet);
 }
 
-.form-floating input:focus{
+.form-floating input:focus {
     outline: 1px solid var(--Dark_grayish_violet);
 }
 
 
-.form-floating-sm input{
+.form-floating-sm input {
     margin-top: 25px;
     height: 30px;
     width: 70px;
@@ -83,15 +160,16 @@ main{
     border: 1px solid var(--Light_grayish_violet);
     border-radius: 7px;
 }
-.form-floating-sm input:focus{
-    outline : 1px solid var(--Dark_grayish_violet);
+
+.form-floating-sm input:focus {
+    outline: 1px solid var(--Dark_grayish_violet);
 }
 
-.form-floating-sm label{
+.form-floating-sm label {
     color: var(--Very_dark_violet);
 }
 
-.form-floating-cvv input{
+.form-floating-cvv input {
     margin-top: 25px;
     height: 30px;
     width: 270px;
@@ -99,58 +177,60 @@ main{
     border: 1px solid var(--Light_grayish_violet);
     border-radius: 7px;
 }
-.form-floating-cvv label{
-    color: var(--Very_dark_violet) ;
+
+.form-floating-cvv label {
+    color: var(--Very_dark_violet);
 }
 
 
-#label-name{
+#label-name {
     position: absolute;
     bottom: 145px;
     left: 5px;
 }
 
-#label-card{
+#label-card {
     position: absolute;
     bottom: 59px;
     left: 5px
 }
 
-#label-mes{
+#label-mes {
     position: absolute;
     bottom: 60px;
     left: 5px;
 }
 
-#label-cvv{
+#label-cvv {
     position: absolute;
     left: 230px;
 }
 
-.btn{
+.btn {
     color: var(--Light_grayish_violet);
-    background-color:var(--Very_dark_violet) ;
+    background-color: var(--Very_dark_violet);
     border-radius: 7px;
     height: 50px;
     width: 525px;
     border: none;
 }
 
-#escrNum{
+#escrNum {
     color: var(--Light_grayish_violet);
-   
+
     background: none;
     border: none;
 }
 
-.forms{
+.forms {
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 450px;
 }
-.datas{
+
+.datas {
     position: relative;
     width: 435px;
     display: flex;
@@ -158,7 +238,7 @@ main{
     gap: 20px;
 }
 
-.numeroCartao{
+.numeroCartao {
     height: 100px;
     color: var(--Light_grayish_violet);
     position: absolute;
@@ -166,19 +246,20 @@ main{
     left: 40px;
 }
 
-.iconCard{
+.iconCard {
     position: absolute;
     top: 30px;
     left: 30px;
 }
-.nameCard{
+
+.nameCard {
     color: var(--Light_grayish_violet);
     position: absolute;
     top: 200px;
     left: 40px;
 }
 
-.dateCard{
+.dateCard {
     display: flex;
     flex-direction: row;
     color: var(--Light_grayish_violet);
@@ -188,14 +269,14 @@ main{
 }
 
 
-.cvvCard{
+.cvvCard {
     color: var(--Light_grayish_violet);
     position: absolute;
     top: 107px;
     left: 355px;
 }
 
-.confim{
+.confim {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -203,6 +284,6 @@ main{
     gap: 50px;
 }
 
-.titulo{
-    font-size:xx-large;
+.titulo {
+    font-size: xx-large;
 }

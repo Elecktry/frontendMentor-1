@@ -26,29 +26,31 @@
 </head>
 
 <body onload="getElementsrCard()">
-
   <main>
     <section class="esquerda">
       <div class="bg-main">
         <img src="./images/bg-main-desktop.png" alt="">
       </div>
+      <div class="bg-main-mobile">
+        <img src="./images/bg-main-mobile.png" alt="">
+      </div>
       <div class="cartoes">
-        <div class="cartao-front"><img src="./images/bg-card-front.png" alt="">
+        <div class="cartao-front"><img class="cardImg" src="./images/bg-card-front.png" alt="">
           <div class="iconCard">
-            <img src="./images/card-logo.svg" alt="">
+            <img class="iconCardFront" src="./images/card-logo.svg" alt="">
           </div>
           <div class="numeroCartao">
-            <h2 id="escrNum">0000 0000 0000 0000</h2>
+            <h2 class="tituloCard" id="escrNum">0000 0000 0000 0000</h2>
           </div>
           <div class="nameCard">
-            <h5 id="escrName">nome do cartão</h5>
+            <h5 class="tituloCard" id="escrName">nome do cartão</h5>
           </div>
           <div class="dateCard">
             <h5 id="escrmes">00</h5>/
             <h5 id="escrano">00</h5>
           </div>
         </div>
-        <div class="cartao-back"> <img src="./images/bg-card-back.png" alt="">
+        <div class="cartao-back"> <img class="cardImg" src="./images/bg-card-back.png" alt="">
           <div class="cvvCard">
             <h5 id="escrcvv">000</h5>
           </div>
@@ -56,41 +58,44 @@
       </div>
 
     </section>
-    <section class="direita">
-      <div class="forms">
-        <div class="form-floating">
-          <input type="email" class="form-control name" id="floatingName" placeholder="e.g Jane Appleseed">
-          <label id="label-name" for="floatingInput">CARDHOLDER NAME</label>
+    <div class="direita">
+      <section>
+        <div class="forms">
+          <div class="form-floating">
+            <input type="email" class="form-control name" id="floatingName" placeholder="e.g Jane Appleseed">
+            <label id="label-name" for="floatingInput">CARDHOLDER NAME</label>
+          </div>
+          <div class="form-floating">
+            <input type="text" class="form-control cartao" id="floatingcartao" placeholder="e.g 1234 5678 9230 0000">
+            <label id="label-card" for="floatingcartao">CARD NUMBER</label>
+          </div>
+
         </div>
-        <div class="form-floating">
-          <input type="text" class="form-control cartao" id="floatingcartao" placeholder="e.g 1234 5678 9230 0000">
-          <label id="label-card" for="floatingcartao">CARD NUMBER</label>
+        <div class="datas">
+
+          <div class="form-floating-sm  ">
+            <input type="text" class="form-control mes" id="floatingMounth" placeholder="MM" minlength="0"
+              maxlength="2">
+            <label id="label-mes" for="floatingMounth">EXP.DATE(MM/YY)</label>
+          </div>
+          <div class="form-floating-sm ">
+            <input type="text" class="form-control ano" id="floatingYears" placeholder="YY" minlength="0" maxlength="2">
+          </div>
+
+          <div class="form-floating-cvv cvv">
+            <input class="form-control" id="floatingcvv" placeholder="e.g 123" minlength="0" maxlength="3">
+            <label id="label-cvv" for="floatingcvv">CVV</label>
+          </div>
+        </div>
+        <div class="forms">
+          <input class="btn" type="submit" value="Confirmar" onclick="redirecioanar()">
         </div>
 
-      </div>
-      <div class="datas">
-
-        <div class="form-floating-sm  ">
-          <input type="text" class="form-control mes" id="floatingMounth" placeholder="MM" minlength="0" maxlength="2">
-          <label id="label-mes" for="floatingMounth">EXP.DATE(MM/YY)</label>
-        </div>
-        <div class="form-floating-sm ">
-          <input type="text" class="form-control ano" id="floatingYears" placeholder="YY" minlength="0" maxlength="2">
-        </div>
-
-        <div class="form-floating-cvv cvv">
-          <input class="form-control" id="floatingcvv" placeholder="e.g 123" minlength="0" maxlength="3">
-          <label id="label-cvv" for="floatingcvv">CVV</label>
-        </div>
-      </div>
-      <div class="forms">
-        <input class="btn" type="submit" value="Confirmar" onclick="redirecioanar()">
-      </div>
 
 
 
-
-    </section>
+      </section>
+    </div>
   </main>
 
 
