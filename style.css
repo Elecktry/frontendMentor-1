@@ -17,17 +17,39 @@
 }
 
 @media screen and (max-width: 480px) {
+
+    .bg-main-mobile img {
+        display: flex !important;
+        width: 100vh;
+
+    }
+
+    .bg-main-mobile {
+        width: 100%;
+    }
+
     .cartao-front {
-        top: 172px !important;
-        left: 25px !important;
+        top: 350px !important;
+        left: 280px !important;
         z-index: 1;
     }
 
+    .direita .forms,
+    .datas {
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+    }
 
     .cartao-back {
-        top: -50px !important;
-        left: 90px !important;
+        top: 62px !important;
+        left: 320px !important;
     }
+
+    .cardImg {
+        height: 180px;
+    }
+
 
     .bg-main {
         display: none;
@@ -35,13 +57,12 @@
 
     main {
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column !important;
         gap: 180px !important;
     }
 
-    .cardImg {
-        height: 131px;
-    }
 
     .tituloCard {
         position: relative;
@@ -70,15 +91,15 @@
         left: 185px !important;
     }
 
-    .cvvCard{
+    .cvvCard {
         z-index: 1;
         position: absolute;
         top: 58px !important;
         left: 180px !important;
     }
-    
 
-    #escrcvv{
+
+    #escrcvv {
         font-size: 8pt !important;
     }
 
@@ -91,9 +112,57 @@
         font-size: 8pt !important;
     }
 
+    .form-floating input {
+        display: flex;
+        align-items: center !important;
+        width: 380px !important;
+    }
+
+    .form-floating-cvv input {
+        width: 170px !important
+    }
+
+    .btn {
+        margin-top: 50px;
+        width: 380px !important;
+    }
+
+    .esquerda {
+        max-width: 100vh;
+    }
+
+    #label-name {
+        position: absolute;
+        bottom: 145px;
+        left: 25px !important;
+    }
+
+    #label-card {
+        position: absolute;
+        bottom: 59px;
+        left: 25px !important;
+    }
+
+    #label-mes {
+        position: absolute;
+        bottom: 55px !important;
+        left: 25px !important;
+    }
+
+    #label-cvv {
+        position: absolute;
+        left: 230px;
+    }
+
+    .form-floating-sm  {
+        margin-right: -15px;
+    }
+
 }
 
 main {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     gap: 500px;
@@ -137,7 +206,7 @@ main {
     margin: 5px;
     padding: 10px;
     height: 30px;
-    width: 500px;
+    /* width: 500px; */
     padding: 10px;
     border: 1px solid var(--Light_grayish_violet);
     border-radius: 7px;
@@ -286,4 +355,8 @@ main {
 
 .titulo {
     font-size: xx-large;
+}
+
+.bg-main-mobile img {
+    display: none;
 }
