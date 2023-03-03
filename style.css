@@ -29,13 +29,13 @@
     }
 
     .cartao-front {
-        top: 350px !important;
-        left: 260px !important;
+        top: 300px !important;
+        left: 220px !important;
         z-index: 1;
     }
     .cartao-back {
-        top: 62px !important;
-        left: 300px !important;
+        top: 11px !important;
+        left: 280px !important;
     }
    
 
