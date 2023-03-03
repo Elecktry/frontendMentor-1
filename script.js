@@ -97,7 +97,6 @@ function getElementsrCard() {
 
 //btn voltar para pagina inicial
 function voltarHome() {
-    s
     window.location.href = './index.html'
 }
 //btn ir para pagina de agradecimento
