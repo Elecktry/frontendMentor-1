@@ -30,10 +30,13 @@
 
     .cartao-front {
         top: 350px !important;
-        left: 280px !important;
+        left: 260px !important;
         z-index: 1;
     }
-
+    .cartao-back {
+        top: 62px !important;
+        left: 300px !important;
+    }
    
 
     .direita .forms,
@@ -43,10 +46,7 @@
         align-items: center !important;
     }
 
-    .cartao-back {
-        top: 62px !important;
-        left: 320px !important;
-    }
+    
 
     .cardImg {
         height: 180px;
@@ -59,8 +59,6 @@
 
     main {
         overflow-x:hidden;
-        
-        overflow-y:hidden;
         width: 100vw;
         display: flex;
         justify-content: center;
@@ -106,7 +104,7 @@
 
 
     #escrcvv {
-        font-size: 8pt !important;
+        font-size: 10pt !important;
     }
 
     #escrmes {
